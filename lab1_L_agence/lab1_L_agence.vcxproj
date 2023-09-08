@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Faction.cpp" />
     <ClCompile Include="lab1_L_agence.cpp" />
+    <ClCompile Include="Livraison.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Transport.cpp" />
+    <ClCompile Include="Vaiseau.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Faction.h" />
+    <ClInclude Include="Livraison.h" />
+    <ClInclude Include="Transport.h" />
+    <ClInclude Include="Vaiseau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
