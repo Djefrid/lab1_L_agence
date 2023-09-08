@@ -1,15 +1,17 @@
 #include "Vaiseau.h"
+
 Vaiseau::Vaiseau(int valeurMarchande,int attaque, int defense, int vie, int capacite, std::string nom, int niveau, int exp)
 {
-	valeurMarchande = ValeurMarchande;
-	attaque = Attaque;
-	defense = Defense;
-	vie = Vie;
-	capacite = Capacite;
-	nom = Nom;
-	niveau = Niveau;
-	exp = Exp;
+	ValeurMarchande = valeurMarchande;
+	Attaque = attaque;
+	Defense = defense;
+	Vie = vie;
+	Capacite = capacite;
+	Nom = nom;
+	Niveau = niveau;
+	Exp = exp;
 }
+
 
 int Vaiseau::getAtt()
 {
@@ -31,9 +33,10 @@ Vaiseau::~Vaiseau()
 
 }
 
+
 std::string Vaiseau::to_string()
 {
-	std::string info;
+	std::string info = "";
 	info.append("Nom : " + Nom + "\n");
 	info.append("Valeur marchande : " + std::to_string(this->ValeurMarchande) + "\n");
 	info.append("Attaque : " + std::to_string(this->Attaque) + "\n");

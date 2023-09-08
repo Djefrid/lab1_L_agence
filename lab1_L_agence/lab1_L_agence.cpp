@@ -3,9 +3,28 @@
 
 #include <iostream>
 
+#include "Guerre.h"
+#include "Livraison.h"
+#include "Transport.h"
+#include "Faction.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n";  
+    Livraison* monVaiseau2 = new Livraison(5000, 30, 25, 5, 30, "Satan 2", 3, 10);
+    std::cout << monVaiseau2->to_string();
+    
+    Guerre* monVaiseau1 = new Guerre(100000, 400, 66, 46, 100, "Satan 2", 20, 50);
+    std::cout << monVaiseau1->to_string();
+    delete monVaiseau1;
+
+    Transport* monVaiseau = new Transport(50000, 50, 35, 10, 80, "GMC", 6, 20);
+    std::cout << monVaiseau->to_string();
+    delete monVaiseau;
+    
+  
+    delete monVaiseau2;
+
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

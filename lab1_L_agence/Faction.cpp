@@ -1,10 +1,10 @@
 #include "Faction.h"
 Faction::Faction(int att, int def, int vie, int capa)
 {
-	att = Attaque;
-	def = Defense;
-	vie = Vie;
-	capa = Capacite;
+	Attaque = att;
+	Defense = def;
+	Vie = vie;
+	Capacite = capa;
 }
 
 Faction::~Faction()

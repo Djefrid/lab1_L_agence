@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+
 class Faction
 {
 protected:
@@ -10,7 +11,7 @@ protected:
 	std::string Nom;
 
 public:
-	Faction();
+	
 	Faction(int att,int def,int vie,int capa);
 	~Faction();
 
