@@ -1,3 +1,4 @@
+#pragma once
 #include "Faction.h"
 Faction::Faction(int att, int def, int vie, int capa)
 {
