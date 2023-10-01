@@ -6,6 +6,19 @@ Transport::Transport(int valeurMarchande,int attaque, int defense, int vie, int 
 	
 }
 
+Transport::Transport(Faction* faction)
+{
+	_faction = faction;
+	Nom = "**** vaisseau de transport ****";
+	Attaque = 50;
+	Defense = 20;
+	Vie = 5;
+	Capacite = 50;
+	Niveau = 2;
+	Exp = 1;
+	ValeurMarchande = 5;
+}
+
 Transport::Transport() :Vaiseau(50000, 50, 35, 10, 80, "GMC", 6, 20)
 {
 

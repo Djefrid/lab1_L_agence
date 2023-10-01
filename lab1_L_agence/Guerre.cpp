@@ -10,6 +10,19 @@ Guerre::Guerre() :Vaiseau(100000, 400, 66, 46, 100, "Satan 2", 20, 50)
 
 }
 
+Guerre::Guerre(Faction* faction):Vaiseau()
+{
+	_faction = faction;
+	Nom = "**** vaisseau de Guerre";
+	Attaque = 65;
+	Defense = 20;
+	Vie = 15;
+	Capacite = 90;
+	Niveau = 6;
+	Exp = 2;
+	ValeurMarchande = 10;
+}
+
 Guerre::~Guerre()
 {
 

@@ -3,7 +3,7 @@
 
 class Faction
 {
-protected:
+public:
 	int Attaque;
 	int Defense;
 	int Vie;

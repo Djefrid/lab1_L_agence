@@ -11,6 +11,19 @@ Livraison::Livraison() :Vaiseau(5000, 30, 25, 5, 30, "Satan 2", 3, 10)
 
 }
 
+Livraison::Livraison(Faction* faction)
+{
+	_faction = faction;
+	Nom = "**** vaisseau de livraison ****";
+	Attaque = 30;
+	Defense = 10;
+	Vie = 5;
+	Capacite = 40;
+	Niveau = 1;
+	Exp = 2;
+	ValeurMarchande = 3;
+}
+
 Livraison::~Livraison()
 {
 

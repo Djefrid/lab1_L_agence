@@ -1,4 +1,9 @@
 #include "Vaiseau.h"
+#include "Faction.h"
+
+Vaiseau::Vaiseau()
+{
+}
 
 Vaiseau::Vaiseau(int valeurMarchande,int attaque, int defense, int vie, int capacite, std::string nom, int niveau, int exp)
 {
@@ -12,20 +17,25 @@ Vaiseau::Vaiseau(int valeurMarchande,int attaque, int defense, int vie, int capa
 	Exp = exp;
 }
 
+Vaiseau::Vaiseau(Faction* faction)
+{
+	    
+}
+
 
 int Vaiseau::getAtt()
 {
-	return Attaque;
+	return Attaque + _faction->Attaque;
 }
 
 int Vaiseau::getDef()
 {
-	return Defense;
+	return Defense + _faction->Defense;
 }
 
 int Vaiseau::getVie()
 {
-	return Vie;
+	return Vie + _faction->Vie;
 }
 
 Vaiseau::~Vaiseau()
