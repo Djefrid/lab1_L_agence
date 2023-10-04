@@ -132,21 +132,29 @@
     <ClCompile Include="Guerre.cpp" />
     <ClCompile Include="lab1_L_agence.cpp" />
     <ClCompile Include="Livraison.cpp" />
+    <ClCompile Include="L_agence.cpp" />
+    <ClCompile Include="Mission.cpp" />
+    <ClCompile Include="MonException.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Station.cpp" />
     <ClCompile Include="Transport.cpp" />
     <ClCompile Include="Utilitaire.cpp" />
-    <ClCompile Include="Vaiseau.cpp" />
+    <ClCompile Include="Vaisseau.cpp" />
+    <ClCompile Include="Planete.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Faction.h" />
     <ClInclude Include="FactoryVaisseau.h" />
     <ClInclude Include="Guerre.h" />
     <ClInclude Include="Livraison.h" />
+    <ClInclude Include="L_agence.h" />
+    <ClInclude Include="Mission.h" />
+    <ClInclude Include="MonException.h" />
     <ClInclude Include="Station.h" />
     <ClInclude Include="Transport.h" />
     <ClInclude Include="Utilitaire.h" />
-    <ClInclude Include="Vaiseau.h" />
+    <ClInclude Include="Vaisseau.h" />
+    <ClInclude Include="Planete.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

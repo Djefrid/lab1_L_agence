@@ -7,6 +7,7 @@
 #include <ctime>
 #include "FactoryVaisseau.h"
 #include "Station.h"
+#include "L_agence.h"
 
 #include <string>
 using std::cout;
@@ -33,7 +34,7 @@ int main()
 
     cout << endl << "********************************************************" << endl;
     cout << "***** production d'un vaisseau *****" << endl;
-    Vaiseau* monVaisseau4 = FactoryVaisseau::getRanddomVaisseau();
+    Vaisseau* monVaisseau4 = FactoryVaisseau::getRanddomVaisseau();
     cout << monVaisseau4->to_string();
 
     delete monVaisseau4;
@@ -46,7 +47,19 @@ int main()
     for (auto item : mastation.getVaisseauDispo())
        cout << item->to_string();
     
-    
+    L_agence monAgence;
+    cout << "**************** Afficher Mission ******************" << endl;
+    monAgence.AfficherMission();
+    cout << "****************** AfficherPlanete ****************" << endl;
+    monAgence.AfficherPlanete();
+    cout << "******************* AfficherVaisseau ***************" << endl;
+    monAgence.AfficherVaisseau();
+
+    cout << "***************** lancement de vaiseau *****************" << endl;
+    Transport monVaiseaux = Transport(50000, 50, 35, 10, 80, "GMC", 6, 20);
+    Mission maMission = Mission("jupiter", "05-11-2023", "m1");
+    monVaiseaux.addMission(maMission);
+    monAgence.Lancement(monVaiseaux);
     
     
     

@@ -7,6 +7,7 @@
 #include "Utilitaire.h"
 #include <string>
 #include <iostream>
+#include "Vaisseau.h"
 using std::cout;
 using std::endl;
 
@@ -23,9 +24,9 @@ enum class TypeFaction
 	bleu
 };
 
-Vaiseau* FactoryVaisseau::getRanddomVaisseau()
+Vaisseau* FactoryVaisseau::getRanddomVaisseau()
 {
-	Vaiseau* vaiseau(0);
+	Vaisseau* vaiseau(0);
 
 	Faction* mafaction = getRandomFaction();
 

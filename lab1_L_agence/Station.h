@@ -1,5 +1,5 @@
 #pragma once
-#include "Vaiseau.h"
+#include "Vaisseau.h"
 #include <vector>
 
 using std::vector;
@@ -10,14 +10,14 @@ private:
 	int _platinumDisponible;
 	int _vieStation;
 
-	vector<Vaiseau*> vecVaisseau;
+	vector<Vaisseau*> vecVaisseau;
 
 public:
 	Station();
 	~Station();
 
-	vector<Vaiseau*> getVaisseauDispo();
+	vector<Vaisseau*> getVaisseauDispo();
 	void init();
-	void ajouterVaisseau(Vaiseau* Vaisseau);
+	void ajouterVaisseau(Vaisseau* Vaisseau);
 };
 

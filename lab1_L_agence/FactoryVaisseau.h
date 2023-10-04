@@ -1,9 +1,9 @@
 #pragma once
-#include "Vaiseau.h"
+#include "Vaisseau.h"
 class FactoryVaisseau
 {
 public:
-	static Vaiseau* getRanddomVaisseau();
+	static Vaisseau* getRanddomVaisseau();
 
 private:
 	static Faction* getRandomFaction();

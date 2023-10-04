@@ -11,7 +11,7 @@ Station::~Station()
 
 
 
-vector<Vaiseau*> Station::getVaisseauDispo()
+vector<Vaisseau*> Station::getVaisseauDispo()
 {
 	return vecVaisseau;
 }
@@ -22,7 +22,7 @@ void Station::init()
 		vecVaisseau.push_back(FactoryVaisseau::getRanddomVaisseau());
 }
 
-void Station::ajouterVaisseau(Vaiseau* Vaisseau)
+void Station::ajouterVaisseau(Vaisseau* Vaisseau)
 {
 	vecVaisseau.push_back(Vaisseau);
 }
